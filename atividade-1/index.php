@@ -1,23 +1,20 @@
 <?php 
 
-
-// Solicita as 4 notas do aluno
-echo "Digite a primeira nota: ";
+echo "Digite a primeira nota: 8";
 $nota1 = (float) readline();
 
-echo "Digite a segunda nota: ";
+echo "Digite a segunda nota: 6";
 $nota2 = (float) readline();
 
-echo "Digite a terceira nota: ";
+echo "Digite a terceira nota: 10";
 $nota3 = (float) readline();
 
-echo "Digite a quarta nota: ";
+echo "Digite a quarta nota: 10";
 $nota4 = (float) readline();
 
-// Calcula a média aritmética
+
 $media = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
 
-// Exibe a média
 echo "A média aritmética do aluno é: " . number_format($media, 2) . "\n";
 
 
