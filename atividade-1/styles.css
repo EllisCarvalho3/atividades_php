@@ -9,8 +9,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&family=Spicy+Rice&display=swap');
 
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo opaca */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Para garantir que fique sempre no topo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
 
+  /* Alinhamento dos Links */
+  nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+  }
 
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px; /* Espaçamento entre os links */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ffa500; /* Cor de destaque ao passar o mouse */
+  }
+
+  /* Ajuste para o corpo da página, evitando sobreposição */
+  body {
+    margin-top: 60px; /* Garante que o conteúdo não fique atrás do header fixo */
+  }
 
 
 

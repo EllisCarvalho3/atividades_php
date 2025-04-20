@@ -26,6 +26,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Questão 1</title>
 </head>
 <body>
+<header>
+    <nav>
+      <ul>
+        <li><a href="#">Introdução</a></li>
+        <li><a href="#">Sintaxe</a></li>
+        <li><a href="#">Operadores</a></li>
+        <li><a href="#">Arrays</a></li>
+        <li><a href="#">Depuração</a></li>
+        <li><a href="#">Considerações Finais</a></li>
+      </ul>
+    </nav>
+  </header>
     <h2>Digite as 4 notas do aluno</h2>
     <form method="post" action="">
         <label>Nota 1: <input type="number" step="0.01" name="nota1" required></label><br><br>
