@@ -14,17 +14,28 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo opaca */
+    height: 10%;
+    background-color: #85c4bee8; /* Cor de fundo opaca */
     color: white;
     padding: 10px 20px;
+    display: flex;  /* Novo */
+    justify-content: space-between;  /* Novo */
     z-index: 1000; /* Para garantir que fique sempre no topo */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
   }
+
+  .logo-img img {
+    width: 40%;
+    padding-left: 45px;
+}
 
   /* Alinhamento dos Links */
   nav {
     display: flex;
     justify-content: flex-end; /* Alinha os itens à direita */
+    padding-right: 60px;
+    margin-top: 7px;
   }
 
   nav ul {
@@ -35,24 +46,24 @@ header {
   }
 
   nav ul li {
-    margin-left: 20px; /* Espaçamento entre os links */
+    margin-left: 27px; /* Espaçamento entre os links */
   }
 
   nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-size: 20px;
+    font-family: 'Libre Baskerville'; /* Fonte para os links */
+    transition: 0.3s ease-in-out;
   }
 
   nav ul li a:hover {
-    color: #ffa500; /* Cor de destaque ao passar o mouse */
+    color: #135D66; /* Cor de destaque ao passar o mouse */
   }
 
   /* Ajuste para o corpo da página, evitando sobreposição */
   body {
-    margin-top: 60px; /* Garante que o conteúdo não fique atrás do header fixo */
+    margin-top: 100px; /* Garante que o conteúdo não fique atrás do header fixo */
   }
 
 
@@ -67,7 +78,90 @@ header {
 
 
 
+/* rodape lindao */
 
+footer {
+    background-color: #85c4bee8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    color: #0B666A;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li {
+    margin: 10px 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: thin;
+}
+
+footer ul li a:hover {
+    color: #136573;
+    transition: 0.4s ease-in-out;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    width: 100%;
+}
+
+.socials a {
+    color: #1a8d96;
+    font-size: 1.1rem;
+}
+
+.socials a:hover {
+    color: #0A4D68;
+    transition: 1s ease-in-out;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    gap: 20px;
+}
+
+.footer-list_header {
+    font-size: 0.9rem;
+    color: #0B666A;
+}
+
+footer p{
+    color: #0B666A;
+}
+
+@media screen and (max-widht: 600px) {
+    .info {
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* rodape lindao */
 
 
 

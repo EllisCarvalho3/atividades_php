@@ -27,6 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 <header>
+<div class="logo-img"> 
+            <img src="images/logo.png" alt="logo">
+        </div>
     <nav>
       <ul>
         <li><a href="#">Introdução</a></li>
@@ -34,10 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <li><a href="#">Operadores</a></li>
         <li><a href="#">Arrays</a></li>
         <li><a href="#">Depuração</a></li>
-        <li><a href="#">Considerações Finais</a></li>
+        <li><a href="#">API'S</a></li>
       </ul>
     </nav>
   </header>
+  
     <h2>Digite as 4 notas do aluno</h2>
     <form method="post" action="">
         <label>Nota 1: <input type="number" step="0.01" name="nota1" required></label><br><br>
@@ -50,5 +54,48 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if ($media !== null): ?>
         <h3>Média do aluno: <?= number_format($media, 2, ',', '') ?></h3>
     <?php endif; ?>
+
+    <footer>
+        <span class="footer-title">Ellis Carvalho Xavier</span>
+        <ul class="socials">
+            <li><a href="https://wa.me/qr/KNIVFKKZMUUXH1"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://x.com/"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/elliscarv/"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+        <div class="info">
+            <ul>
+                <li class="footer-list_header">Oferece</li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="contact.php">Contato</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Documentos</li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Políticas de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Para você</li>
+                <li><a href="#">Manuais</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Dicas e Truques</a></li>
+                <li><a href="#">F&Q</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Trabalhe conosco</li>
+                <li><a href="#">Afiliar</a></li>
+                <li><a href="#">Colaborações</a></li>
+                <li><a href="#">Patrocinadores</a></li>
+                <li><a href="#">Parcerias</a></li>
+        </div>
+        <p>Copyright &copy 2025 Ellis Carvalho Xavier. Todos os diereitos reservados. </p>
+    </footer>
 </body>
 </html>
