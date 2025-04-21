@@ -71,7 +71,7 @@ main {
     background-color: #a7ede79a;
 }
 
-.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15 h1 {
+.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15, .questao16 h1 {
     font-size: 30px;
     font-family: 'Playwrite';
     color: #0B666A;
@@ -85,6 +85,14 @@ main {
     color: #0B666A;
     text-align: center;
     margin-top: 20px;
+}
+
+.questao16 h2 {
+  font-size: 30px;
+  font-family: 'Playwrite';
+  color: #0B666A;
+  text-align: center;
+  margin-top: 20px;
 }
 
 form {
@@ -163,6 +171,19 @@ form {
   input[type="submit"]:hover {
     background-color: #185154;
     font-family: 'Libre Baskerville';
+  }
+
+  select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #185154;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #aff1eac9;
+    color: #185154;
+    display: inline-block;
+    box-sizing: border-box;
   }
 
   button {
