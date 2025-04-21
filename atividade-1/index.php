@@ -1,5 +1,4 @@
 <?php
-
 $media = null;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -19,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="images/e.png" type="image/x-icon">
     <title>Questão 1</title>
 </head>
 <body>
