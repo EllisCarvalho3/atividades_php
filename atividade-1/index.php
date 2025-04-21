@@ -41,19 +41,74 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </ul>
     </nav>
   </header>
-  
-    <h2>Digite as 4 notas do aluno</h2>
-    <form method="post" action="">
-        <label>Nota 1: <input type="number" step="0.01" name="nota1" required></label><br><br>
-        <label>Nota 2: <input type="number" step="0.01" name="nota2" required></label><br><br>
-        <label>Nota 3: <input type="number" step="0.01" name="nota3" required></label><br><br>
-        <label>Nota 4: <input type="number" step="0.01" name="nota4" required></label><br><br>
-        <button type="submit">Calcular Média</button>
-    </form>
 
-    <?php if ($media !== null): ?>
-        <h3>Média do aluno: <?= number_format($media, 2, ',', '') ?></h3>
-    <?php endif; ?>
+
+    <main>
+        <section class="questao1">
+            <h1>Olá! Responda a questão 1 para introduzirmos PHP.</h1>
+            <h2>Digite as 4 notas do aluno</h2>
+            <form method="post" action="">
+                <label>Nota 1: <input type="number" step="0.01" name="nota1" required></label><br><br>
+                <label>Nota 2: <input type="number" step="0.01" name="nota2" required></label><br><br>
+                <label>Nota 3: <input type="number" step="0.01" name="nota3" required></label><br><br>
+                <label>Nota 4: <input type="number" step="0.01" name="nota4" required></label><br><br>
+                <button type="submit">Calcular Média</button>
+            </form>
+
+            <?php if (isset($media)): ?>
+    <div class="resultado-media">
+      <h3>Média do aluno: <?= number_format($media, 2, ',', '') ?></h3>
+    </div>
+  <?php endif; ?>
+
+        </section>
+    </main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  <section class="section-about" id="section-about">
+        <div class="tamanho-video">
+        <div class="contact-text">
+                    <h1>Certificações</h1>
+        </div>
+            <video autoplay muted loop id="myVideo">
+                <source src="videos/background.mp4" type="video/mp4">
+              </video>       
+        </div>   
+    </section> -->
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
