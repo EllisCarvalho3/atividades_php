@@ -72,16 +72,15 @@ main {
 }
 
 .questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15, .questao16 h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Playwrite';
     color: #0B666A;
     text-align: center;
     margin-top: 20px;
 }
 
-.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15 h2 {
-    font-size: 25px;
-    font-family: 'Oleo Script Swash Caps';
+.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15, .questao16 h2 {
+    font-size: 22px;
     color: #0B666A;
     text-align: center;
     margin-top: 20px;
@@ -215,6 +214,7 @@ form {
     margin-top: 20px;
     text-align: center;
     color: #0A4D68;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Libre Baskerville';
   }
@@ -226,12 +226,14 @@ form {
     font-family: 'Libre Baskerville';
     color: #0A4D68;
     text-align: justify;
+    font-size: 16px;
   }
 
   .resultados-questao10 {
     font-family: 'Libre Baskerville';
     color: #0A4D68;
     text-align: center;
+    font-size: 16px;
   }
 
   .final-questao10, .resultados-questao11, .resultados-questao12, .resultado-questao13, .resultado-questao14, .resultados-questao15 {
@@ -242,6 +244,7 @@ form {
     margin-top: 20px;
     text-align: center;
     color: #0A4D68;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Libre Baskerville';
   }

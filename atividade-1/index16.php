@@ -164,11 +164,7 @@
 
     </section>
   </main>
-
-
-
-
-
+  
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">
