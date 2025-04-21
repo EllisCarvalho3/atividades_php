@@ -27,7 +27,7 @@
   <main>
     <section class="questao13">
          <h1>Olá! Responda a questão 13 para introduzirmos PHP.</h1>
-        <h2>Escrever um texto</h2>
+        <h2>Escreva um texto</h2>
         <form method="post">
             Texto: 
             <input type="text" name="texto" required>

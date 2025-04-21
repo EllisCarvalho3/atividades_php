@@ -27,7 +27,7 @@
   <main>
     <section class="questao15">
         <h1>Olá! Responda a questão 15 para introduzirmos PHP.</h1>
-        <h2>Calcular a Área de um Retângulo</h2>
+        <h2>Calcule a área de um retângulo</h2>
 
          <form method="post">
         Base: <input type="number" step="0.1" name="largura" required><br><br>
