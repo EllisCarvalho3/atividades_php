@@ -22,13 +22,7 @@
         .active { background:rgba(34, 138, 143, 0.83); font-weight: bold; }
         .content { border: 1px solid #228a8f; padding: 20px; border-radius: 5px; }
         form { margin-bottom: 20px; }
-        .hist {
-            margin-top: 15px;
-            padding: 10px;
-            background:rgba(102, 193, 184, 0.79);
-            border: 1px  #228a8f;
-            border-radius: 5px;
-        }
+        
     </style>
 </head>
 <body>
@@ -138,33 +132,11 @@
                     <input type="submit" value="Calcular">
                 </form>
             <?php } ?>
-
-            <?php if (!empty($_SESSION['historico'])): ?>
-                <div class="hist">
-                    <h4> Histórico:</h4>
-                    <ul>
-                        <?php foreach ($_SESSION['historico'] as $item): ?>
-                            <li><?= htmlspecialchars($item) ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <form method="post" action="?tab=<?= $tab ?>">
-                        <input type="submit" name="limpar" value="Limpar histórico">
-                    </form>
-                </div>
-            <?php endif; ?>
-
-            <?php
-            if (isset($_POST['limpar'])) {
-                unset($_SESSION['historico']);
-                header("Location: ?tab=$tab");
-                exit;
-            }
-            ?>
             </div>
 
     </section>
   </main>
-  
+
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">
