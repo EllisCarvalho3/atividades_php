@@ -13,7 +13,7 @@ if (isset($_POST['idade'])) {
         $finalizado = true;
         $menores = $_SESSION['menores'];
         $idosos = $_SESSION['idosos'];
-        session_destroy(); // Zera a contagem
+        session_destroy();
     } else {
         if ($idade < 18) {
             $_SESSION['menores']++;
@@ -32,7 +32,7 @@ if (isset($_POST['idade'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Contar Faixas Etárias</title>
+    <title>Questão 10</title>
 </head>
 <body>
 <header>
@@ -50,20 +50,30 @@ if (isset($_POST['idade'])) {
       </ul>
     </nav>
   </header>
-    <h2>Digite a idade das pessoas</h2>
-
-    <?php if (isset($finalizado) && $finalizado): ?>
-        <p>Total de pessoas com menos de 18 anos: <strong><?= $menores ?></strong></p>
-        <p>Total de pessoas com mais de 65 anos: <strong><?= $idosos ?></strong></p>
-        <p><a href="<?= $_SERVER['PHP_SELF'] ?>">Reiniciar</a></p>
+  <main>
+        <section class="questao10">
+            <h1>Olá! Responda a questão 10 para introduzirmos PHP.</h1>
+            <h2>Contar Faixas Etárias</h2>
+             <?php if (isset($finalizado) && $finalizado): ?>
+                <div class="final-questao10">
+                    <p>Total de pessoas com menos de 18 anos: <strong><?= $menores ?></strong></p>
+                            <p>Total de pessoas com mais de 65 anos: <strong><?= $idosos ?></strong></p>
+                            <p><a href="<?= $_SERVER['PHP_SELF'] ?>">Reiniciar</a></p>
+                </div>
+       
     <?php else: ?>
         <form method="post">
             Idade: <input type="number" name="idade" min="0" required>
             <input type="submit" value="Enviar">
         </form>
-        <p>Digite <strong>0</strong> ou valor negativo para encerrar.</p>
+        <div class="resultados-questao10">
+            <p>Digite <b>0</b> ou valor negativo para encerrar.</p>
+        </div>
+        
     <?php endif; ?>
 
+        </section>
+    </main>
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

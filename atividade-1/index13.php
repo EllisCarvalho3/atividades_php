@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Função escreva()</title>
+    <title>Questão 13</title>
 </head>
 <body>
 <header>
@@ -24,29 +24,32 @@
       </ul>
     </nav>
   </header>
-    <h2>Digite um texto e eu vou escrevê-lo para você:</h2>
+  <main>
+    <section class="questao13">
+         <h1>Olá! Responda a questão 13 para introduzirmos PHP.</h1>
+        <h2>Escrever um texto</h2>
+        <form method="post">
+            Texto: 
+            <input type="text" name="texto" required>
+            <input type="submit" value="Escrever">
+        </form>
 
-    <!-- Formulário HTML -->
-    <form method="post">
-        Texto: 
-        <input type="text" name="texto" required>
-        <input type="submit" value="Escrever">
-    </form>
+        <div class="resultado-questao13">
+             <?php
+        function escreva($texto) {
+            echo "<p>Você escreveu: " . htmlspecialchars($texto) . "</p>";
+        }
+        
+        if (isset($_POST['texto'])) {
+            $mensagem = $_POST['texto'];
+            escreva($mensagem);
+        }
+        ?>   
+        </div>
 
-    <?php
-    // 1. Criamos a função escreva()
-    function escreva($texto) {
-        echo "<p><strong>Você escreveu:</strong> " . htmlspecialchars($texto) . "</p>";
-    }
-
-    // 2. Se o formulário foi enviado...
-    if (isset($_POST['texto'])) {
-        $mensagem = $_POST['texto'];
-
-        // 3. Chamamos o robôzinho escreva() para mostrar o texto
-        escreva($mensagem);
-    }
-    ?>
+       
+    </section>
+  </main>
 
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

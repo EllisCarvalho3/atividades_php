@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Números Pares de 1 a 100</title>
+    <title>Questão 9</title>
 </head>
 <body>
 <header>
@@ -24,12 +24,15 @@
       </ul>
     </nav>
   </header>
-    <h2>Mostrar números pares de 1 a 100</h2>
+  <main>
+    <section class="questao9">
+        <h1>Olá! Responda a questão 9 para introduzirmos PHP.</h1>
+        <h2>Mostrar números pares de 1 a 100</h2>
 
-    <form method="post">
+        <form method="post">
         <input type="submit" name="mostrar" value="Exibir Pares">
-    </form>
 
+        <div class="resultados-questao9">
     <?php
     if (isset($_POST['mostrar'])) {
         echo "<p>";
@@ -41,7 +44,10 @@
         echo "</p>";
     }
     ?>
-
+    </div>
+    </form>
+    </section>
+  </main>
 
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

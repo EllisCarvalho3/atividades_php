@@ -1,10 +1,7 @@
 <?php
-// Caminho: media_formulario.php
 
-// Inicializa a média como vazia
 $media = null;
 
-// Processa o formulário se os dados foram enviados
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nota1 = (float) $_POST['nota1'];
     $nota2 = (float) $_POST['nota2'];
@@ -30,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <div class="logo-img"> 
             <img src="images/logo.png" alt="logo">
         </div>
-    <nav>
+    <nav> 
       <ul>
         <li><a href="#">Introdução</a></li>
         <li><a href="#">Sintaxe</a></li>

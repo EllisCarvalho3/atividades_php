@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Verificar Temperatura Corporal</title>
+    <title>Questão 6</title>
     <style>
         input.resultado {
             font-weight: bold;
@@ -14,12 +14,12 @@
             width: 200px;
         }
         .normal {
-            background-color: #d4edda;
+            background-color:rgb(123, 191, 139);
             color: #155724;
             border: 1px solid #c3e6cb;
         }
         .febre {
-            background-color: #f8d7da;
+            background-color:rgb(203, 131, 137);
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
@@ -41,9 +41,11 @@
       </ul>
     </nav>
   </header>
-    <h2>Verificar se há febre</h2>
-
-    <form method="post">
+  <main>
+    <section class="questao6">
+        <h1>Olá! Responda a questão 6 para introduzirmos PHP.</h1>
+        <h2>Verifique se há febre</h2>
+         <form method="post">
         Temperatura corporal (°C): 
         <input type="number" step="0.1" name="temp" min="30" max="45"
                value="<?= isset($_POST['temp']) ? $_POST['temp'] : '' ?>"><br><br>
@@ -68,6 +70,8 @@
 
         <input type="submit" value="Verificar">
     </form>
+    </section>
+  </main>
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Números de 1 a 100</title>
+    <title>Questão 8</title>
 </head>
 <body>
 <header>
@@ -24,22 +24,28 @@
       </ul>
     </nav>
   </header>
-    <h2>Mostrar números de 1 a 100</h2>
+  <main>
+    <section class="questao8">
+        <h1>Olá! Responda a questão 8 para introduzirmos PHP.</h1>
+        <h2>Mostrar números de 1 a 100</h2>
 
-    <form method="post">
+        <form method="post">
         <input type="submit" name="mostrar" value="Exibir Números">
+        <div class="resultados-questao8">
+                    <?php
+            if (isset($_POST['mostrar'])) {
+                echo "<p>";
+                for ($i = 1; $i <= 100; $i++) {
+                    echo $i . " ";
+                }
+                echo "</p>";
+            }
+            ?>
+        </div>
+       
     </form>
-
-    <?php
-    if (isset($_POST['mostrar'])) {
-        echo "<p>";
-        for ($i = 1; $i <= 100; $i++) {
-            echo $i . " ";
-        }
-        echo "</p>";
-    }
-    ?>
-
+    </section>
+  </main>
 
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

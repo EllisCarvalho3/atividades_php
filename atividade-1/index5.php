@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Verificar Velocidade</title>
-</head>
+    <title>Questão 5</title>
+</head> 
 <body>
 <header>
 <div class="logo-img"> 
@@ -24,29 +24,34 @@
       </ul>
     </nav>
   </header>
-    <h2>Verificar se a velocidade está dentro do limite (110 km/h)</h2>
+  <main>
+    <section class="questao5">
+        <h1>Olá! Responda a questão 5 para introduzirmos PHP.</h1>
+        <h2>Verifique se a velocidade do veículo está dentro do limite</h2>
+        <form method="post">
+            Velocidade do veículo (km/h): 
+            <input type="number" name="velocidade" min="0" value="<?= isset($_POST['velocidade']) ? $_POST['velocidade'] : '' ?>"><br><br>
 
-    <form method="post">
-        Velocidade do veículo (km/h): 
-        <input type="number" name="velocidade" min="0" value="<?= isset($_POST['velocidade']) ? $_POST['velocidade'] : '' ?>"><br><br>
+            Resultado:
+            <input type="text" readonly value="<?php
+                if (isset($_POST['velocidade'])) {
+                    $vel = (int) $_POST['velocidade'];
+                    $limite = 110;
 
-        Resultado:
-        <input type="text" readonly value="<?php
-            if (isset($_POST['velocidade'])) {
-                $vel = (int) $_POST['velocidade'];
-                $limite = 110;
-
-                if ($vel > $limite) {
-                    $excesso = $vel - $limite;
-                    echo "Excedeu em $excesso km/h";
-                } else {
-                    echo "Dentro do limite";
+                    if ($vel > $limite) {
+                        $excesso = $vel - $limite;
+                        echo "Excedeu em $excesso km/h";
+                    } else {
+                        echo "Dentro do limite";
+                    }
                 }
-            }
-        ?>"><br><br>
+            ?>"><br><br>
 
-        <input type="submit" value="Verificar">
-    </form>
+            <input type="submit" value="Verificar">
+        </form>
+
+    </section>
+  </main>
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

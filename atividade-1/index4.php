@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Verificar Maioridade</title>
+    <title>Questão 4</title>
 </head>
 <body>
 <header>
@@ -24,9 +24,11 @@
       </ul>
     </nav>
   </header>
-    <h2>Verifique se você já atingiu a maioridade</h2>
-
-    <form method="post">
+  <main>
+    <section class="questao4">
+        <h1>Olá! Responda a questão 4 para introduzirmos PHP.</h1>
+        <h2>Verifique se você já atingiu a maioridade</h2>
+         <form method="post">
         Informe sua idade: 
         <input type="number" name="idade" min="0" value="<?= isset($_POST['idade']) ? $_POST['idade'] : '' ?>"><br><br>
 
@@ -46,6 +48,10 @@
         <input type="submit" value="Verificar">
     </form>
 
+    </section>
+  </main>
+
+   
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

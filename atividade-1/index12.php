@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Ler 5 Nomes com Vetor</title>
+    <title>Questão 12</title>
 </head>
-<body>
+<body> 
 <header>
 <div class="logo-img"> 
             <img src="images/logo.png" alt="logo">
@@ -24,9 +24,12 @@
       </ul>
     </nav>
   </header>
-    <h2>Digite 5 nomes</h2>
-
-    <form method="post">
+  <main>
+    <section class="questao12">
+        <h1>Olá! Responda a questão 12 para introduzirmos PHP.</h1>
+        <h2>Ler 5 Nomes com Vetor</h2>
+        
+        <form method="post">
         <?php for ($i = 1; $i <= 5; $i++): ?>
             Nome <?= $i ?>: 
             <input type="text" name="nomes[]" required><br><br>
@@ -34,18 +37,22 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <?php
-    if (isset($_POST['nomes'])) {
-        $nomes = $_POST['nomes'];
-
-        echo "<h3>Nomes digitados:</h3><ul>";
-        foreach ($nomes as $nome) {
-            echo "<li>" . htmlspecialchars($nome) . "</li>";
+    <div class="resultados-questao12">
+        <?php
+        if (isset($_POST['nomes'])) {
+            $nomes = $_POST['nomes'];
+            echo "<h3>Nomes digitados:</h3>";
+            foreach ($nomes as $nome) {
+                echo "<br>" . htmlspecialchars($nome) . "</br>";
+            }
+            echo "</br>";
         }
-        echo "</ul>";
-    }
-    ?>
-
+        ?>
+    </div>
+            
+    </section>
+  </main>
+   
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

@@ -15,12 +15,12 @@ header {
     left: 0;
     width: 100%;
     height: 10%;
-    background-color: #85c4bee8; /* Cor de fundo opaca */
+    background-color: #85c4bee8; 
     color: white;
     padding: 10px 20px;
-    display: flex;  /* Novo */
-    justify-content: space-between;  /* Novo */
-    z-index: 1000; /* Para garantir que fique sempre no topo */
+    display: flex; 
+    justify-content: space-between;  
+    z-index: 1000; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     align-items: center;
   }
@@ -30,40 +30,39 @@ header {
     padding-left: 45px;
 }
 
-  /* Alinhamento dos Links */
   nav {
     display: flex;
-    justify-content: flex-end; /* Alinha os itens à direita */
+    justify-content: flex-end; 
     padding-right: 60px;
     margin-top: 7px;
   }
 
   nav ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     display: flex;
   }
 
   nav ul li {
-    margin-left: 27px; /* Espaçamento entre os links */
+    margin-left: 27px; 
   }
 
   nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: 'Libre Baskerville'; /* Fonte para os links */
+    font-family: 'Libre Baskerville'; 
     transition: 0.3s ease-in-out;
   }
 
   nav ul li a:hover {
-    color: #135D66; /* Cor de destaque ao passar o mouse */
+    color: #135D66; 
   }
 
-  /* Ajuste para o corpo da página, evitando sobreposição */
+  
   body {
-    margin-top: 100px; /* Garante que o conteúdo não fique atrás do header fixo */
+    margin-top: 100px; 
   }
 
 main {
@@ -72,7 +71,7 @@ main {
     background-color: #a7ede79a;
 }
 
-.questao1 h1 {
+.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15 h1 {
     font-size: 30px;
     font-family: 'Playwrite';
     color: #0B666A;
@@ -80,7 +79,7 @@ main {
     margin-top: 20px;
 }
 
-.questao1 h2 {
+.questao1, .questao2, .questao3, .questao4, .questao5, .questao6, .questao8, .questao9, .questao10, .questao11, .questao12, .questao13, .questao14, .questao15 h2 {
     font-size: 25px;
     font-family: 'Oleo Script Swash Caps', cursive;
     color: #0B666A;
@@ -96,7 +95,7 @@ form {
     max-width: 350px;
     margin: 40px auto;
     box-shadow: 0 4px 10px #127e84;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Libre Baskerville';
   }
 
   label {
@@ -104,6 +103,7 @@ form {
     margin-bottom: 4px;
     font-weight: 600;
     color: #0A4D68;
+    font-family: 'Libre Baskerville';
   }
 
   input[type="number"] {
@@ -115,11 +115,54 @@ form {
     box-sizing: border-box;
     font-size: 14px;
     transition: border-color 0.3s;
+    color: #0A4D68;
+    font-family: 'Libre Baskerville';
   }
 
   input[type="number"]:focus {
     border-color: #127e84;
     outline: none;
+    color: #0A4D68;
+    font-family: 'Libre Baskerville';
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #127e84;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: 'Libre Baskerville';
+    color: #0A4D68;
+  }
+
+  input[type="text"]:focus {
+    border-color: #127e84;
+    outline: none;
+    font-family: 'Libre Baskerville';
+    color: #0A4D68;
+  }
+
+  input[type="submit"] {
+    background-color: #228a8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville';
+  }
+
+  input[type="submit"]:hover {
+    background-color: #185154;
+    font-family: 'Libre Baskerville';
   }
 
   button {
@@ -133,12 +176,15 @@ form {
     transition: 0.3s ease-in-out;
     width: 100%;
     margin-top: 10px;
+    font-family: 'Libre Baskerville';
   }
 
   button:hover {
     background-color: #185154;
+    font-family: 'Libre Baskerville';
   }
 
+  /* questao 1 */
   .resultado-media {
     background-color: #57d4db79;
     border: 1px solid #b8e0c5;
@@ -148,9 +194,36 @@ form {
     text-align: center;
     color: #0A4D68;
     font-weight: bold;
+    font-family: 'Libre Baskerville';
+  }
+  /* questao 1 */
+
+  /* questao 8 */
+ 
+  .resultados-questao8, .resultados-questao9 {
+    font-family: 'Libre Baskerville';
+    color: #0A4D68;
+    text-align: justify;
   }
 
+  .resultados-questao10 {
+    font-family: 'Libre Baskerville';
+    color: #0A4D68;
+    text-align: center;
+  }
 
+  .final-questao10, .resultados-questao11, .resultados-questao12, .resultado-questao13, .resultado-questao14, .resultados-questao15 {
+    background-color: #57d4db79;
+    border: 1px solid #b8e0c5;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    color: #0A4D68;
+    font-weight: bold;
+    font-family: 'Libre Baskerville';
+  }
+  /* questao 8 */
 
 
 

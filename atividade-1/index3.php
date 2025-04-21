@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Par ou Ímpar</title>
+    <title>Questão 3</title>
 </head>
 <body>
 <header>
@@ -24,22 +24,29 @@
       </ul>
     </nav>
   </header>
-    <h2>Verificar se o número é Par ou Ímpar</h2>
+  <main>
+     <section class="questao3">
+        <h1>Olá! Responda a questão 3 para introduzirmos PHP.</h1>
+        <h2>Verificar se o número é Par ou Ímpar</h2>
+            <form method="post">
+                    Digite um número: 
+                    <input type="number" name="numero" value="<?= isset($_POST['numero']) ? $_POST['numero'] : '' ?>"><br><br>
 
-    <form method="post">
-        Digite um número: 
-        <input type="number" name="numero" value="<?= isset($_POST['numero']) ? $_POST['numero'] : '' ?>"><br><br>
+                    Resultado:
+                    <input type="text" readonly value="<?php
+                        if (isset($_POST['numero'])) {
+                            $n = (int) $_POST['numero'];
+                            echo ($n % 2 == 0) ? "Par" : "Ímpar";
+                        }
+                    ?>"><br><br>
 
-        Resultado:
-        <input type="text" readonly value="<?php
-            if (isset($_POST['numero'])) {
-                $n = (int) $_POST['numero'];
-                echo ($n % 2 == 0) ? "Par" : "Ímpar";
-            }
-        ?>"><br><br>
+                    <input type="submit" value="Verificar">
+                </form>
+    </section>
+  </main>
+   
 
-        <input type="submit" value="Verificar">
-    </form>
+    
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
