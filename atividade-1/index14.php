@@ -27,7 +27,7 @@
   <main>
     <section class="questao14">
         <h1>Olá! Responda a questão 14 para introduzirmos PHP.</h1>
-        <h2>Soma de dois números</h2>
+        <h2>Some dois números</h2>
 
         <form method="post">
                 Número 1: <input type="number" name="x" required><br><br>

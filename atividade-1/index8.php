@@ -27,7 +27,7 @@
   <main>
     <section class="questao8">
         <h1>Olá! Responda a questão 8 para introduzirmos PHP.</h1>
-        <h2>Mostrar números de 1 a 100</h2>
+        <h2>Mostre os números de 1 a 100</h2>
 
         <form method="post">
         <input type="submit" name="mostrar" value="Exibir Números">

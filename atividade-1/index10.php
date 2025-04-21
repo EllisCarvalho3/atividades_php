@@ -53,7 +53,7 @@ if (isset($_POST['idade'])) {
   <main>
         <section class="questao10">
             <h1>Olá! Responda a questão 10 para introduzirmos PHP.</h1>
-            <h2>Contar faixas etárias</h2>
+            <h2>Conte faixas etárias</h2>
              <?php if (isset($finalizado) && $finalizado): ?>
                 <div class="final-questao10">
                     <p>Total de pessoas com menos de 18 anos: <strong><?= $menores ?></strong></p>

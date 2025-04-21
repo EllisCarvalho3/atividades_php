@@ -28,7 +28,7 @@
   <main>
     <section class="questao2">
      <h1>Olá! Responda a questão 2 para introduzirmos PHP.</h1>
-        <h2>Converter Celsius para Fahrenheit</h2>
+        <h2>Converta Celsius para Fahrenheit</h2>
             <form method="post">
                 Temperatura em Celsius: 
                 <input type="text" name="celsius" value="<?= isset($_POST['celsius']) ? $_POST['celsius'] : '' ?>"><br><br>

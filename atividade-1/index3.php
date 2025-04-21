@@ -27,7 +27,7 @@
   <main>
      <section class="questao3">
         <h1>Olá! Responda a questão 3 para introduzirmos PHP.</h1>
-        <h2>Verificar se o número é par ou ímpar</h2>
+        <h2>Verifique se o número é par ou ímpar</h2>
             <form method="post">
                     Digite um número: 
                     <input type="number" name="numero" value="<?= isset($_POST['numero']) ? $_POST['numero'] : '' ?>"><br><br>

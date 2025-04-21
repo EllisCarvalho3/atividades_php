@@ -27,7 +27,7 @@
   <main>
     <section class="questao11">
         <h1>Olá! Responda a questão 11 para introduzirmos PHP.</h1>
-        <h2>Ler 5 números com vetor</h2>
+        <h2>Leia 5 números com vetor</h2>
          <form method="post">
         <?php for ($i = 1; $i <= 5; $i++): ?>
             Número <?= $i ?>: 
