@@ -82,7 +82,6 @@ main {
     margin-top: 20px;
 }
 
-
 form {
     background-color: #dafffbeb;
     border: 2px solid #0B666A;
@@ -209,7 +208,7 @@ form {
   }
   /* questao 1 */
 
-  /* questao 8 */
+  /* questoes 8, 9, 10, 11, 12, 13, 14, 15 */
  
   .resultados-questao8, .resultados-questao9 {
     font-family: 'Libre Baskerville';
@@ -237,62 +236,10 @@ form {
     font-weight: bold;
     font-family: 'Libre Baskerville';
   }
-  /* questao 8 */
 
+ /* questoes 8, 9, 10, 11, 12, 13, 14, 15 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*   .tamanho-video {
-    background-size: cover;
-    background: url(imagens/background_certifications.jpg) no-repeat center;
-    position: relative;
-    height: 600px;
-}
-
-video {
-    width: 100%; 
-    height: 100%;
-    object-fit: cover; 
-} */
-
-/* rodape lindao */
+/* rodape */
 
 footer {
     background-color: #85c4bee8;
@@ -375,29 +322,4 @@ footer p{
     }
 }
 
-/* rodape lindao */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* rodape */
