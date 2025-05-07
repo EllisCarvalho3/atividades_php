@@ -1,7 +1,7 @@
 <?php
-$media = null;
+$media = null;  //a variável recebe o valor nulo no início
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") { //a condição vai garantir se é identico ou não
     $nota1 = (float) $_POST['nota1'];
     $nota2 = (float) $_POST['nota2'];
     $nota3 = (float) $_POST['nota3']; 
