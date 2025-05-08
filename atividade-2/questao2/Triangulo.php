@@ -23,7 +23,7 @@
 
             // return ($this->base * $this->altura) / 2;
 
-            return "Olá! Vamos agora conferir os lados do seu triângulo e calcular a área dele: lado 1= " .$this->lado1. ", lado 2= " .$this->lado2. ", lado 3= " .$this->lado3. ". E sua área é: " .($this->base * $this->altura)/ 2;
+            return "Lados do seu triângulo e cálculo da área dele: lado 1= " .$this->lado1. ", lado 2= " .$this->lado2. ", lado 3= " .$this->lado3. ". E sua área é: " .($this->base * $this->altura)/ 2;
         }
     }
 }

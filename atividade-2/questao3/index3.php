@@ -24,10 +24,10 @@
     </nav>
   </header>
 <body>
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <main>
   <section class="questao3">
-    <h1>Olá! Confira as informações do seu carro.</h1>
+    <h1>Olá! Confira as informações do seu carro:</h1>
   <?php 
         require './Carro.php';
        
@@ -48,7 +48,7 @@
   </section>
 </main>
    
-<br> <br> <br><br><br><br><br><br><br><br><br><br>
+<br> <br> <br><br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

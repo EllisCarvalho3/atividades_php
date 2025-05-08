@@ -80,7 +80,23 @@ main {
   background-color: #fff8d4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
+
+.questao2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 58%;
+  height: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff8d4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+
 .questao1, .questao2, .questao3 h1 {
   font-size: 28px;
   font-family: 'Playwrite';
@@ -92,13 +108,13 @@ main {
 .questao1, .questao2, .questao3 h2 {
   font-size: 22px;
   font-family: 'Playwrite';
-  color: #f4b406;
+  color: #f47906;
   text-align: center;
   margin-top: 20px;
 }
 
 footer {
-  background-color: #fad47d;
+  background-color: #ffd165;
   color: white;
   text-align: center;
   padding: 10px;
@@ -108,7 +124,7 @@ footer {
 
 .footer-title {
   font-size: 1.5rem;
-  color: #d39400;
+  color: white;
 }
 
 footer ul {
@@ -163,7 +179,7 @@ footer ul li a:hover {
 }
 
 footer p{
-  color: #d39400;
+  color: white
 }
 
 @media screen and (max-widht: 600px) {

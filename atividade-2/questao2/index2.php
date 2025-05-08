@@ -24,10 +24,10 @@
     </nav>
   </header>
 <body>
-  <br><br><br><br><br><br>
+  <br><br><br><br><br>
   <main>
     <section class="questao2">
-      <h1>Olá! Veremos agora informações para validar um triângulo.</h1>
+      <h1>Olá! Veremos agora informações para validar um triângulo:</h1>
     <?php 
     require './Triangulo.php';
     $lado1 = new Triangulo();
@@ -37,7 +37,7 @@
     </section>
   </main>
    
-<br> <br> <br><br><br><br><br><br><br><br><br><br>
+<br> <br> <br><br><br><br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

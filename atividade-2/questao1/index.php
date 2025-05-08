@@ -25,10 +25,10 @@
   </header>
 <body>
 <br>
-
+<br><br><br><br>
   <main>
     <section class="questao1">
-      <h1>Olá! O nome do usuário será apresentado juntamente com sua idade. Obrigada por participar!</h1>
+      <h1>Olá! O nome do usuário será apresentado juntamente com sua idade:</h1>
         <?php
       require './Pessoa.php';
       $nome = new Pessoa();
@@ -38,7 +38,7 @@
     </section>
   </main>
     
-<br> <br> <br><br><br><br><br><br><br><br><br><br>
+<br> <br> <br><br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

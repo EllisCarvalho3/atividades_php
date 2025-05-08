@@ -15,7 +15,7 @@ class Carro
         $this->marca = $marca;
         $this->modelo = $modelo;
 
-        return "Olá. A marca do seu carro é $this->marca e o modelo é $this->modelo.";
+        return "A marca do seu carro é $this->marca e o modelo é $this->modelo.";
 
  
     }
