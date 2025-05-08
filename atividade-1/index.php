@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { //a condição vai garantir se é i
       </ul>
     </nav>
   </header>
-
+ 
 
     <main>
         <section class="questao1">
@@ -61,50 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { //a condição vai garantir se é i
     </main>
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--  <section class="section-about" id="section-about">
-        <div class="tamanho-video">
-        <div class="contact-text">
-                    <h1>Certificações</h1>
-        </div>
-            <video autoplay muted loop id="myVideo">
-                <source src="videos/background.mp4" type="video/mp4">
-              </video>       
-        </div>   
-    </section> -->
 
     <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

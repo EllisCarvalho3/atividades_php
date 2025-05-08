@@ -10,7 +10,7 @@ header {
     left: 0;
     width: 100%;
     height: 10%;
-    background-color: #FBDB93; 
+    background-color: #f8cf6fa4; 
     color: white;
     padding: 10px 20px;
     display: flex; 
@@ -52,7 +52,7 @@ header {
   }
 
   nav ul li a:hover {
-    color: #d57a19; 
+    color: #ff921d; 
   }
 
   
@@ -65,4 +65,115 @@ main {
     margin: 0;
     padding: 5px;
     background-color: #FEF3E2;
+   
+}
+
+.questao1, .questao2, .questao3 {
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff8d4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.questao1, .questao2, .questao3 h1 {
+  font-size: 28px;
+  font-family: 'Playwrite';
+  color: #d39400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.questao1, .questao2, .questao3 h2 {
+  font-size: 25px;
+  font-family: 'Playwrite';
+  color: #f4b406;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #fad47d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  color: #d39400;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li {
+  margin: 10px 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: thin;
+}
+
+footer ul li a:hover {
+  color: #ff921d;
+  transition: 0.4s ease-in-out;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+  width: 100%;
+}
+
+.socials a {
+  color: #e7aa1e;
+  font-size: 1.1rem;
+}
+
+.socials a:hover {
+  color: #ff921d;
+  transition: 1s ease-in-out;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+  gap: 20px;
+}
+
+.footer-list_header {
+  font-size: 0.9rem;
+  color: #d39400;
+}
+
+footer p{
+  color: #d39400;
+}
+
+@media screen and (max-widht: 600px) {
+  .info {
+      flex-direction: column;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 }

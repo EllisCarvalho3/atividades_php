@@ -24,14 +24,63 @@
     </nav>
   </header>
 <body>
+<br>
 
-    <?php
-    require './Pessoa.php';
-    $nome = new Pessoa();
-    $msg = $nome->apresentar("Webber", 30);
-    echo "<h1>$msg</h1>";
-
-?>
+  <main>
+    <section class="questao1">
+      <h1>Olá! O nome do usuário será apresentado juntamente com sua idade. Obrigada por participar!</h1>
+        <?php
+      require './Pessoa.php';
+      $nome = new Pessoa();
+      $msg = $nome->apresentar("Webber", 30);
+      echo "<h2>$msg</h2>";
+  ?>
+    </section>
+  </main>
+    
+<br> <br> <br><br><br><br><br><br><br><br><br><br>
+<footer>
+        <span class="footer-title">Ellis Carvalho Xavier</span>
+        <ul class="socials">
+            <li><a href="https://wa.me/qr/KNIVFKKZMUUXH1"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://x.com/"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/elliscarv/"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+        <div class="info">
+            <ul>
+                <li class="footer-list_header">Oferece</li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="contact.php">Contato</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Documentos</li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Políticas de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Para você</li>
+                <li><a href="#">Manuais</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Dicas e Truques</a></li>
+                <li><a href="#">F&Q</a></li>
+            </ul>
+    
+            <ul>
+                <li class="footer-list_header">Trabalhe conosco</li>
+                <li><a href="#">Afiliar</a></li>
+                <li><a href="#">Colaborações</a></li>
+                <li><a href="#">Patrocinadores</a></li>
+                <li><a href="#">Parcerias</a></li>
+        </div>
+        <p>Copyright &copy 2025 Ellis Carvalho Xavier. Todos os diereitos reservados. </p>
+    </footer>
     
 </body>
 </html>
