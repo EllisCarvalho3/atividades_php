@@ -10,7 +10,7 @@ header {
     left: 0;
     width: 100%;
     height: 10%;
-    background-color: #85c4bee8; 
+    background-color: #FBDB93; 
     color: white;
     padding: 10px 20px;
     display: flex; 
@@ -52,17 +52,17 @@ header {
   }
 
   nav ul li a:hover {
-    color: #135D66; 
+    color: #d57a19; 
   }
 
   
   body {
     margin-top: 100px; 
-    background-color: #a7ede79a;
+    background-color: #FEF3E2;
   }
 
 main {
     margin: 0;
     padding: 5px;
-    background-color: #a7ede79a;
+    background-color: #FEF3E2;
 }
