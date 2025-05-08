@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles1.css">
     <link rel="shortcut icon" href="/imagens/e_amarelo.png" type="image/x-icon">
-    <title>Questão 1</title>
+    <title>Questão 1</title> 
 </head>
 <header>
 <div class="logo-img"> 
