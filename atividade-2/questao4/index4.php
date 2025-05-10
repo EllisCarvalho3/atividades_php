@@ -56,6 +56,8 @@
             echo "<h2>$msg</h2>";
         }
     ?>
+
+      </div>
   
 </main>
    

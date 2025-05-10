@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 3</title>
 </head> 
@@ -26,35 +26,43 @@
 <body>
 <br><br><br><br><br><br>
 <main>
-  <section class="questao3">
-    <h1>Olá! </h1>
- <?php 
+  <div class="form-container">
+        <h1>Classe: Produto</h1>
+        <form action="" method="post">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o produto..." required>
 
-    require './index6.php';
-    $produto = new Produto("Produto 1", 10.00, 5);
-    $produto->adicionarestoque(10);
-    $produto->removerestoque(3);
-    $estoque = $produto->getestoque();
-    $preco = $produto->getpreco();
-    $msg = $produto->exibir();
+            <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" placeholder="Digite o preço..." required>
 
-    echo "<h2>$msg</h2>";
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade..." required>
 
-    echo "<h2>Preço: R$ $preco</h2>";
+            <button type="submit">Cadastrar Produto</button>
+        </form> <br>
 
-    echo "<h2>Estoque: $estoque unidades</h2>";
+        <div class="resultado6">
+          
+        <?php 
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                require './Produto.php';
 
-    $produto->adicionarestoque(5);
-    $produto->removerestoque(2);
-    $estoque = $produto->getestoque();
-    echo "<h2>Estoque atualizado: $estoque unidades</h2>";
-    $produto->setpreco(12.50);
-    $preco = $produto->getpreco();
-    echo "<h2>Preço atualizado: R$ $preco</h2>";
+                $nome = $_POST['nome'];
+                $preco = floatval($_POST['preco']);
+                $quantidade = intval($_POST['quantidade']);
 
- ?>
+                $produto = new Produto($nome, $preco, $quantidade);
+               
+                echo "<p>" . $produto->exibir() . "</p>";
+                echo "<p>Preço: R$ " . number_format($produto->getpreco(), 2, ',', '.') . "</p>";
+                echo "<p>Estoque: " . $produto->getestoque() . " unidades</p>";
+            }
+        ?>
 
-  </section>
+        </div>
+    </div> 
+
+
 </main>
    
 <br> <br> <br><br><br><br><br>

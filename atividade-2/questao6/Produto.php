@@ -1,29 +1,52 @@
 <!-- Implemente uma classe chamada “Produto” que possua atributos para armazenar o nome, o preço e a quantidade em estoque. Adicione métodos para calcular o valor total em estoque e verificar se o produto está disponível. -->
-
 <?php
 {
     class Produto
     {
         public string $nome;
-        public float $preco; 
+        public float $preco;
         public int $quantidade;
 
+        // Construtor para inicializar os atributos
         public function __construct($nome, $preco, $quantidade)
         {
             $this->nome = $nome;
             $this->preco = $preco;
             $this->quantidade = $quantidade;
-
-            public function valortotal()
-        {
-            return $this->preco * $this->quantidade;
         }
 
-        public function verificardisponibilidade()
+        // Métodos para manipulação de estoque
+        public function adicionarestoque($quantidade)
         {
-            return $this->quantidade > 0 ? "Produto disponível" : "Produto indisponível";
+            $this->quantidade += $quantidade;
         }
+
+        public function removerestoque($quantidade)
+        {
+            if ($this->quantidade >= $quantidade) {
+                $this->quantidade -= $quantidade;
+            }
         }
-        
+
+        public function getestoque()
+        {
+            return $this->quantidade;
+        }
+
+        public function getpreco()
+        {
+            return $this->preco;
+        }
+
+        public function setpreco($preco)
+        {
+            $this->preco = $preco;
+        }
+
+        public function exibir()
+        {
+            return "Produto: $this->nome";
+        }
     }
 }
+?>

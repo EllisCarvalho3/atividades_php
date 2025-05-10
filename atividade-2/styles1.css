@@ -196,6 +196,24 @@ form button:hover {
     
 }
 
+.resultado6 {
+  font-family: 'Playwrite';
+    background-color: #FFE082;
+    border-radius: 5px;
+    color: #E65100;
+    text-align: center;
+    width: 230px;
+    height: 200px;
+    margin-left: 70px;
+    font-size: 22px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 
 footer {
   background-color: #ffd165;
