@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 1</title> 
 </head> 
@@ -27,18 +27,40 @@
 <br>
 <br><br><br><br>
   <main>
-    <section class="questao1">
-      <h1>Olá! O nome do usuário será apresentado juntamente com sua idade:</h1>
+      <div class="form-container">
+        <h1>Classe: Pessoa</h1>
+        <form action="" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder= "Digite seu nome..." required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder= "Digite sua idade..." required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="resultado">
         <?php
-      require './Pessoa.php';
-      $nome = new Pessoa();
-      $msg = $nome->apresentar("Webber", 30);
-      echo "<h2>$msg</h2>";
-  ?>
-    </section>
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                require './Pessoa.php';
+
+                // Coletando os dados do formulário
+                $nome = $_POST['nome'];
+                $idade = $_POST['idade'];
+
+                // Instanciando o objeto da classe Pessoa
+                $pessoa = new Pessoa();
+                $msg = $pessoa->apresentar($nome, $idade);
+
+                // Exibindo a mensagem estilizada
+                echo $msg;
+            }
+        ?>
+    </div>
   </main>
     
-<br> <br> <br><br><br><br><br>
+<br> <br> <br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

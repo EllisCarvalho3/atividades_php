@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 3</title>
 </head>
-<header>
+<header> 
 <div class="logo-img"> 
             <img src="../imagens/logo.png" alt="logo">
         </div>
@@ -26,20 +26,40 @@
 <body>
 <br><br><br><br><br><br>
 <main>
-  <section class="questao3">
-    <h1>Olá! Confira as informações do seu retângulo:</h1>
-  <?php 
-        require './Retangulo.php';
-        $retangulo = new Retangulo();
-        $msg = $retangulo->conferir(10, 20);
-        echo "<h2>$msg</h2>";
-        
-    ?>
+<div class="form-container">
+  <h1>Classe: Retângulo</h1>
+  <form action="" method="post">
+      <label for="base">Base:</label>
+      <input type="number" id="base" name="base" placeholder= "Digite a base do retângulo..." required>
+      
+      <label for="altura">Altura:</label>
+      <input type="number" id="altura" name="altura" placeholder= "Digite a altura do retângulo..." required>
 
-  </section>
+      <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<div class="resultado2">
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            require './Retangulo.php';
+
+            // Coletando os dados do formulário
+            $base = $_POST['base'];
+            $altura = $_POST['altura'];
+
+            // Instanciando o objeto da classe Retangulo
+            $retangulo = new Retangulo();
+            $msg = $retangulo->conferir($base, $altura);
+
+            // Exibindo a mensagem estilizada
+            echo "<h2>$msg</h2>";
+        }
+    ?>
+  
 </main>
    
-<br> <br> <br><br><br><br><br>
+<br> <br> <br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

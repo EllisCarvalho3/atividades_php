@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 3</title>
 </head>
@@ -26,27 +26,62 @@
 <body>
 <br><br><br><br><br><br>
 <main>
-  <section class="questao3">
-    <h1>Olá! Confira as informações do seu carro:</h1>
-  <?php 
-        require './Carro.php';
-       
-        $carro = new Carro();
-       
-        $msg = $carro->exibir("Chevrolet", "Camaro");
-        echo "<h2>$msg</h2>";
 
-        // acelerando e mostrando o retorno
-        $msg = $carro->acelerar(90);
-        echo "<h2>$msg</h2>";
+   <div class="form-container">
+        <h1>Classe: Carro</h1>
+        <form action="" method="post">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Digite a marca do seu carro..." required>
 
-        // freando e mostrando o retorno
-        $msg = $carro->frear(50);
-        echo "<h2>$msg</h2>";
-    ?>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do seu carro..." required>
 
-  </section>
+            <label for="valor">Valor para Acelerar ou Frear:</label>
+            <input type="number" id="valor" name="valor" placeholder="Digite o valor da sua velocidade..." required>
+
+            <label for="acao">Escolha uma ação:</label>
+            <select id="acao" name="acao" required>
+                <option value="exibir">Exibir Informações</option>
+                <option value="acelerar">Acelerar</option>
+                <option value="frear">Frear</option>
+            </select>
+
+            <button type="submit">Executar</button>
+        </form>
+    </div>
+
+    <div class="resultado">
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                require './Carro.php';
+
+                $marca = $_POST['marca'];
+                $modelo = $_POST['modelo'];
+                $valor = (int)$_POST['valor'];
+                $acao = $_POST['acao'];
+
+                $carro = new Carro();
+                $msg = "";
+
+                if ($acao === "exibir") {
+                    $msg = $carro->exibir($marca, $modelo);
+                } elseif ($acao === "acelerar") {
+                    $carro->exibir($marca, $modelo);
+                    $msg = $carro->acelerar($valor);
+                } elseif ($acao === "frear") {
+                    $carro->exibir($marca, $modelo);
+                    $msg = $carro->frear($valor);
+                }
+
+                echo "<h2>$msg</h2>";
+            }
+        ?>
+    </div>
+
+
 </main>
+
+
    
 <br> <br> <br><br><br><br><br>
 <footer>

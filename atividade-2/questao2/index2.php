@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 2</title>
 </head>
@@ -26,18 +26,49 @@
 <body>
   <br><br><br><br><br>
   <main>
-    <section class="questao2">
-      <h1>Olá! Veremos agora informações para validar um triângulo:</h1>
-    <?php 
-    require './Triangulo.php';
-    $lado1 = new Triangulo();
-    $msg = $lado1->conferir(10, 15, 20, 20, 20);
-    echo "<h2>$msg</h2>"
-?>
-    </section>
+    <div class="form-container">
+        <h1>Classe: Triângulo</h1>
+        <form action="" method="post">
+            <label for="lado1">Lado 1:</label>
+            <input type="number" id="lado1" name="lado1" placeholder= "Digite o lado 1..." required>
+            
+            <label for="lado2">Lado 2:</label>
+            <input type="number" id="lado2" name="lado2" placeholder= "Digite o lado 2..." required>
+
+            <label for="lado3">Lado 3:</label>
+            <input type="number" id="lado3" name="lado3" placeholder= "Digite o lado 3..." required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <div class="resultado2">
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                require './Triangulo.php';
+
+                // Coletando os dados do formulário
+                $lado1 = $_POST['lado1'];
+                $lado2 = $_POST['lado2'];
+                $lado3 = $_POST['lado3'];
+                $base = $_POST['lado1'];
+                $altura = $_POST['lado2'];
+
+                // Instanciando o objeto da classe Triangulo
+                $triangulo = new Triangulo();
+                $msg = $triangulo->conferir($lado1, $lado2, $lado3, $base, $altura);
+
+                // Exibindo a mensagem estilizada
+                echo "<h2>$msg</h2>";
+            }
+        ?>
+
+    </div>
+   
   </main>
    
-<br> <br> <br><br><br><br><br><br><br>
+<br> <br> <br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

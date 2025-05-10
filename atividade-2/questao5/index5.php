@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles1.css">
+    <link rel="stylesheet" href="../styles1.css?v=1">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 3</title>
 </head>
-<header>
+<header> 
 <div class="logo-img"> 
             <img src="../imagens/logo.png" alt="logo">
         </div>
@@ -26,23 +26,52 @@
 <body>
 <br><br><br><br><br><br>
 <main>
-  <section class="questao3">
-    <h1>Olá! </h1>
-  <?php 
-        require './Aluno.php';
-        $aluno = new Aluno("Webber", "123456");
-        $aluno->adicionarnota(10);
-        $aluno->adicionarnota(8);
-        $aluno->adicionarnota(9);
-        $media = $aluno->calcularmedia();
-        $situacao = ($media >= 7) ? "Aprovado" : "Reprovado";
-        echo "<h2>Nome: {$aluno->nome}</h2>";
-        echo "<h2>Matrícula: {$aluno->matricula}</h2>";
-        echo "<h2>Média: {$media}</h2>";
-        echo "<h2>Situação: {$situacao}</h2>";
-    ?>
+  
+    <div class="form-container">
+        <h1>Cadastro de Notas do Aluno</h1>
+        <form action="" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
 
-  </section>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula..." required>
+
+            <label for="notas">Notas (separadas por vírgula):</label>
+            <input type="text" id="notas" name="notas" required placeholder="Ex.: 7.5, 8, 9">
+
+            <button type="submit">Calcular Média</button>
+        </form>
+    </div>
+
+    <div class="resultado5">
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                require './Aluno.php';
+
+                $nome = $_POST['nome'];
+                $matricula = $_POST['matricula'];
+                $notas = explode(',', $_POST['notas']);
+
+                $aluno = new Aluno($nome, $matricula);
+
+                // Adiciona cada nota ao objeto
+                foreach ($notas as $nota) {
+                    $aluno->adicionarnota((float)trim($nota));
+                }
+
+                $media = $aluno->calcularmedia();
+                $situacao = ($media >= 7) ? "Aprovado" : "Reprovado";
+
+                echo "<h2>Nome: {$aluno->nome}</h2>";
+                echo "<h2>Matrícula: {$aluno->matricula}</h2>";
+                echo "<h2>Média: {$media}</h2>";
+                echo "<h2>Situação: {$situacao}</h2>";
+            }
+        ?>
+    </div>
+
+    
+ 
 </main>
    
 <br> <br> <br><br><br><br><br>
