@@ -47,19 +47,16 @@
         <?php
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 require './Triangulo.php';
-
-                // Coletando os dados do formulário
+               
                 $lado1 = $_POST['lado1'];
                 $lado2 = $_POST['lado2'];
                 $lado3 = $_POST['lado3'];
                 $base = $_POST['lado1'];
                 $altura = $_POST['lado2'];
-
-                // Instanciando o objeto da classe Triangulo
+               
                 $triangulo = new Triangulo();
                 $msg = $triangulo->conferir($lado1, $lado2, $lado3, $base, $altura);
-
-                // Exibindo a mensagem estilizada
+               
                 echo "<h2>$msg</h2>";
             }
         ?>

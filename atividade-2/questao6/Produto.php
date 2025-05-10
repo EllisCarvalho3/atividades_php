@@ -6,8 +6,7 @@
         public string $nome;
         public float $preco;
         public int $quantidade;
-
-        // Construtor para inicializar os atributos
+      
         public function __construct($nome, $preco, $quantidade)
         {
             $this->nome = $nome;
@@ -15,7 +14,6 @@
             $this->quantidade = $quantidade;
         }
 
-        // Métodos para manipulação de estoque
         public function adicionarestoque($quantidade)
         {
             $this->quantidade += $quantidade;

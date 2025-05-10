@@ -54,7 +54,6 @@
 
                 $aluno = new Aluno($nome, $matricula);
 
-                // Adiciona cada nota ao objeto
                 foreach ($notas as $nota) {
                     $aluno->adicionarnota((float)trim($nota));
                 }

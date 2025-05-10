@@ -44,16 +44,13 @@
         <?php
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 require './Pessoa.php';
-
-                // Coletando os dados do formulário
+                
                 $nome = $_POST['nome'];
                 $idade = $_POST['idade'];
 
-                // Instanciando o objeto da classe Pessoa
                 $pessoa = new Pessoa();
                 $msg = $pessoa->apresentar($nome, $idade);
 
-                // Exibindo a mensagem estilizada
                 echo $msg;
             }
         ?>

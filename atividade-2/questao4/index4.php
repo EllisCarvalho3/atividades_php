@@ -43,16 +43,13 @@
     <?php
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             require './Retangulo.php';
-
-            // Coletando os dados do formulário
+            
             $base = $_POST['base'];
             $altura = $_POST['altura'];
-
-            // Instanciando o objeto da classe Retangulo
+           
             $retangulo = new Retangulo();
             $msg = $retangulo->conferir($base, $altura);
-
-            // Exibindo a mensagem estilizada
+            
             echo "<h2>$msg</h2>";
         }
     ?>

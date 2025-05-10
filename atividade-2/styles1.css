@@ -59,9 +59,9 @@ header {
   body {
     margin-top: 100px; 
     background-color: #FEF3E2;
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin: 0;
     flex-direction: column;
   }
