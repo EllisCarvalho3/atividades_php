@@ -32,10 +32,10 @@
 
     require './index6.php';
     $produto = new Produto("Produto 1", 10.00, 5);
-    $produto->adicionarEstoque(10);
-    $produto->removerEstoque(3);
-    $estoque = $produto->getEstoque();
-    $preco = $produto->getPreco();
+    $produto->adicionarestoque(10);
+    $produto->removerestoque(3);
+    $estoque = $produto->getestoque();
+    $preco = $produto->getpreco();
     $msg = $produto->exibir();
 
     echo "<h2>$msg</h2>";
@@ -44,12 +44,12 @@
 
     echo "<h2>Estoque: $estoque unidades</h2>";
 
-    $produto->adicionarEstoque(5);
-    $produto->removerEstoque(2);
-    $estoque = $produto->getEstoque();
+    $produto->adicionarestoque(5);
+    $produto->removerestoque(2);
+    $estoque = $produto->getestoque();
     echo "<h2>Estoque atualizado: $estoque unidades</h2>";
-    $produto->setPreco(12.50);
-    $preco = $produto->getPreco();
+    $produto->setpreco(12.50);
+    $preco = $produto->getpreco();
     echo "<h2>Preço atualizado: R$ $preco</h2>";
 
  ?>
