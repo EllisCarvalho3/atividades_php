@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles1.css">
     <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
     <title>Questão 3</title>
-</head>
+</head> 
 <header>
 <div class="logo-img"> 
             <img src="../imagens/logo.png" alt="logo">
@@ -28,7 +28,31 @@
 <main>
   <section class="questao3">
     <h1>Olá! </h1>
- 
+ <?php 
+
+    require './index6.php';
+    $produto = new Produto("Produto 1", 10.00, 5);
+    $produto->adicionarEstoque(10);
+    $produto->removerEstoque(3);
+    $estoque = $produto->getEstoque();
+    $preco = $produto->getPreco();
+    $msg = $produto->exibir();
+
+    echo "<h2>$msg</h2>";
+
+    echo "<h2>Preço: R$ $preco</h2>";
+
+    echo "<h2>Estoque: $estoque unidades</h2>";
+
+    $produto->adicionarEstoque(5);
+    $produto->removerEstoque(2);
+    $estoque = $produto->getEstoque();
+    echo "<h2>Estoque atualizado: $estoque unidades</h2>";
+    $produto->setPreco(12.50);
+    $preco = $produto->getPreco();
+    echo "<h2>Preço atualizado: R$ $preco</h2>";
+
+ ?>
 
   </section>
 </main>

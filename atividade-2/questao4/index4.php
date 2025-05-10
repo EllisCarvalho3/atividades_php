@@ -27,9 +27,12 @@
 <br><br><br><br><br><br>
 <main>
   <section class="questao3">
-    <h1>Olá! </h1>
+    <h1>Olá! Confira as informações do seu retângulo:</h1>
   <?php 
-        require '';
+        require './Retangulo.php';
+        $retangulo = new Retangulo();
+        $msg = $retangulo->conferir(10, 20);
+        echo "<h2>$msg</h2>";
         
     ?>
 

@@ -29,8 +29,17 @@
   <section class="questao3">
     <h1>Olá! </h1>
   <?php 
-        require '';
-        
+        require './Aluno.php';
+        $aluno = new Aluno("Webber", "123456");
+        $aluno->adicionarnota(10);
+        $aluno->adicionarnota(8);
+        $aluno->adicionarnota(9);
+        $media = $aluno->calcularmedia();
+        $situacao = ($media >= 7) ? "Aprovado" : "Reprovado";
+        echo "<h2>Nome: {$aluno->nome}</h2>";
+        echo "<h2>Matrícula: {$aluno->matricula}</h2>";
+        echo "<h2>Média: {$media}</h2>";
+        echo "<h2>Situação: {$situacao}</h2>";
     ?>
 
   </section>
