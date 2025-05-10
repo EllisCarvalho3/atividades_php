@@ -28,10 +28,7 @@
 <main>
   <section class="questao3">
     <h1>Olá! </h1>
-  <?php 
-        require '';
-        
-    ?>
+ 
 
   </section>
 </main>
