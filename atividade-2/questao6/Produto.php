@@ -5,7 +5,7 @@
     class Produto
     {
         public string $nome;
-        public float $preco;
+        public float $preco; 
         public int $quantidade;
 
         public function __construct($nome, $preco, $quantidade)
@@ -13,9 +13,8 @@
             $this->nome = $nome;
             $this->preco = $preco;
             $this->quantidade = $quantidade;
-        }
 
-        public function valortotal()
+            public function valortotal()
         {
             return $this->preco * $this->quantidade;
         }
@@ -24,5 +23,7 @@
         {
             return $this->quantidade > 0 ? "Produto disponível" : "Produto indisponível";
         }
+        }
+        
     }
 }
