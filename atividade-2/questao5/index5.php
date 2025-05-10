@@ -28,7 +28,7 @@
 <main>
   
     <div class="form-container">
-        <h1>Cadastro de Notas do Aluno</h1>
+        <h1>Classe: Aluno</h1>
         <form action="" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
