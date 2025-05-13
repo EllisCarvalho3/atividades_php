@@ -30,14 +30,14 @@
         <h1>Desafio!</h1>
           <?php
 
-            require_once 'ContaBancaria.php';
+            require 'ContaBancaria.php';
         
             $conta = new ContaBancaria('Webber', 0);
             $conta->depositar(500);
             $conta->sacar(600);
             $conta->sacar(400);
 
-            echo "Saldo final: R$ " . $conta->getSaldo() . "<br>";
+            echo "Saldo final: R$ " . $conta->saldo() . "<br>";
         ?>
 
     </div>

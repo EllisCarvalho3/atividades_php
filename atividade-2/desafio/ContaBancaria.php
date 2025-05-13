@@ -27,7 +27,7 @@ class ContaBancaria {
         }
     }
 
-    public function getSaldo(): float {
+    public function saldo(): float {
         return $this->saldo;
     }
 }
