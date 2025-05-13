@@ -106,6 +106,28 @@ main {
     margin-bottom: 20px;
 }
 
+.desafio {
+    background-color: #f9ebab;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  font-size: 22px;
+  font-family: 'Playwrite';
+  color: #f47906;
+  text-align: center;
+}
+
+.desafio h1 {
+  font-family: 'Playwrite';
+    color: #E65100;
+    margin-bottom: 20px;
+}
+
 form label {
   font-family: 'Playwrite';
    font-size: 20px;
