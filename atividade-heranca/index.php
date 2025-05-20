@@ -27,7 +27,7 @@
 <body>
     <main>
         <div class="heranca">
-            <h1>Herença em POO.</h1>
+            <h1>Herança em POO.</h1>
             <?php
                 require 'Cliente.php';
                 $clienteFisico = new ClienteFisico("12345678900", "Webberzinho de Souza Fantini", "Rua das Panquecas, 123", "Centro");
@@ -41,7 +41,7 @@
         </div>
     </main>
 
-<br><br><br>
+<br><br><br><br><br>
 
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>

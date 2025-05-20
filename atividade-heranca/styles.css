@@ -10,7 +10,7 @@ header {
     left: 0;
     width: 100%;
     height: 10%;
-    background-color: #f8cf6fa4; 
+    background-color: #a53860c0; 
     color: white;
     padding: 10px 20px;
     display: flex; 
@@ -52,13 +52,13 @@ header {
   }
 
   nav ul li a:hover {
-    color: #ff921d; 
+    color: #f6acc8; 
   }
 
   
   body {
     margin-top: 100px; 
-    background-color: #FEF3E2;
+    background-color: #ef88aea5;
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -68,13 +68,31 @@ header {
 
 main {
     margin: 0;
-    padding: 5px;
-    background-color: #FEF3E2;
+    margin-top: 80px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #ef88aea5;
    
 }
 
+.heranca h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    color: #3A0519;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heranca h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    color: #872341;
+    text-align: center;
+    
+}
+
 footer {
-  background-color: #ffd165;
+  background-color: #a53860c0;
   color: white;
   text-align: center;
   padding: 10px;
@@ -105,7 +123,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #ff921d;
+  color: #ad134e;
   transition: 0.4s ease-in-out;
 }
 
@@ -117,12 +135,12 @@ footer ul li a:hover {
 }
 
 .socials a {
-  color: #e7aa1e;
+  color: #f6acc8;
   font-size: 1.1rem;
 }
 
 .socials a:hover {
-  color: #ff921d;
+  color: #ad134e;
   transition: 1s ease-in-out;
 }
 
@@ -135,7 +153,7 @@ footer ul li a:hover {
 
 .footer-list_header {
   font-size: 0.9rem;
-  color: #d39400;
+  color: #f6acc8;
 }
 
 footer p{
