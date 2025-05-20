@@ -54,7 +54,6 @@ header {
   nav ul li a:hover {
     color: #f6acc8; 
   }
-
   
   body {
     margin-top: 100px; 
@@ -72,7 +71,6 @@ main {
     border-radius: 5px;
     padding: 8px;
     background-color: #ef88aea5;
-   
 }
 
 .heranca h1 {

@@ -57,7 +57,7 @@
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Categorias</a></li>
-                <li><a href="contact.php">Contato</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
     
             <ul>
