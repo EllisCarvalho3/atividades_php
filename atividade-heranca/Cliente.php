@@ -52,6 +52,4 @@ class ClienteJuridico extends Cliente
         return "Nome Fantasia: " . $this->nomeFantasia . ", CNPJ: " . $this->cnpj . ", " . $this->verEndereco();
     }
 }
-
-
 ?>
