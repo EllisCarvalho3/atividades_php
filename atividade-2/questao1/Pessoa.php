@@ -1,4 +1,4 @@
-<!-- Crie uma classe chamada Pessoa com os atributos nome e idade. Implemente um método apresentar() que exibe o nome e a idade da pessoa. Instancie dois objetos da classe e chame o método apresentar() para ambos. -->
+<!-- Crie uma classe chamada Pessoa com os atributos nome e idade. Implemente um método apresentar() que exibe o nome e a idade da pessoa. Instancie dois objetos da classe e chame o método apresentar() para ambos. --> 
 
 
 <?php

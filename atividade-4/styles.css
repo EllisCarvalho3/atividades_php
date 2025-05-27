@@ -69,27 +69,10 @@ header {
 main {
     margin: 0;
     padding: 5px;
-    background-color: #FEF3E2;
-   
+    background-color: #FEF3E2;  
 }
 
-.questao1, .questao2, .questao3 h1 {
-  font-size: 28px;
-  font-family: 'Playwrite';
-  color: #d39400;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.questao1, .questao2, .questao3 h2 {
-  font-size: 22px;
-  font-family: 'Playwrite';
-  color: #f47906;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.form-container {
+form-container {
     background-color: #f9ebab;
     padding: 20px;
     border-radius: 10px;
@@ -101,28 +84,6 @@ main {
 }
 
 .form-container h1 {
-  font-family: 'Playwrite';
-    color: #E65100;
-    margin-bottom: 20px;
-}
-
-.desafio {
-    background-color: #f9ebab;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 20px;
-    font-size: 22px;
-  font-size: 22px;
-  font-family: 'Playwrite';
-  color: #f47906;
-  text-align: center;
-}
-
-.desafio h1 {
   font-family: 'Playwrite';
     color: #E65100;
     margin-bottom: 20px;
@@ -170,7 +131,6 @@ form button:hover {
     background-color:  #E65100;;
 }
 
-/* Estilização da Mensagem */
 .resultado {
   font-family: 'Playwrite';
     background-color: #FFE082;
@@ -185,57 +145,6 @@ form button:hover {
     justify-content: center;
     align-items: center;
 }
-
-.resultado2 {
-  font-family: 'Playwrite';
-    background-color: #FFE082;
-    border-radius: 5px;
-    color: #E65100;
-    text-align: center;
-    width: 340px;
-    font-size: 1.2em;
-    padding: 10px;
-    margin-left: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.resultado5 {
-  font-family: 'Playwrite';
-    background-color: #FFE082;
-    border-radius: 5px;
-    color: #E65100;
-    text-align: center;
-    width: 400px;
-    font-size: 15px;
-    padding: 10px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.resultado6 {
-  font-family: 'Playwrite';
-    background-color: #FFE082;
-    border-radius: 5px;
-    color: #E65100;
-    text-align: center;
-    width: 230px;
-    height: 200px;
-    margin-left: 70px;
-    font-size: 22px;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
 
 footer {
   background-color: #ffd165;
