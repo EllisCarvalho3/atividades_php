@@ -27,27 +27,22 @@
 <br>
 <br><br><br><br>
   <main>
-       <?php
+    <div class="box">
+        <h1>Classe: Produto</h1>
+        <?php
                 require './Produto.php';
-                $nome = $_POST['nome'];
-                $preco = $_POST['idade'];
-                $tipo = $_POST['tipo'];
-                $autor = $_POST['autor'];
-                $duracao = $_POST['duracao'];
-                if ($tipo === 'livro') {
-                    $produto = new Livro($nome, $preco, $autor);
-                } else {
-                    $produto = new DVD($nome, $preco, $duracao);
-                }
-                $msg = $produto->exibirProduto();
-                echo $msg;
-            
-        ?>
-    </div>
+                $livro = new Livro("Como eu era antes de você", 39.90, "Jojo Moyes");
+                $dvd = new DVD("Matrix", 29.90, 136);
+                echo $livro->exibirProduto() . "<br>";
+                echo $dvd->exibirProduto();
 
+                echo "<br>";
+        ?>
+
+    </div>
   </main>
     
-<br> <br> <br><br><br><br><br><br><br><br>
+<br> <br> <br><br><br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">

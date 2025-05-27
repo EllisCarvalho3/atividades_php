@@ -45,14 +45,4 @@ class DVD extends
             return parent::exibirProduto() . ", Duração: " . $this->duracao . " minutos";
         }
     }
-
-// Exemplo de uso
-$livro = new Livro("Como eu era antes de você", 39.90, "Jojo Moyes");
-$dvd = new DVD("Matrix", 29.90, 136);
-echo $livro->exibirProduto() . "<br>";
-echo $dvd->exibirProduto();
-
-echo "<br>";
-
-
 ?>

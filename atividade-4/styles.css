@@ -70,7 +70,24 @@ main {
     padding: 5px;
     background-color: black; 
     color: white; 
-     box-shadow: 0 3px 10px #59298f;
+}
+
+.box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #59298f;
+    width: 400px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.box h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: #d295ed;
 }
 
 footer {
@@ -140,7 +157,7 @@ footer ul li a:hover {
 }
 
 footer p{
-  color: white
+  color: #d295ed;
 }
 
 @media screen and (max-widht: 600px) {
