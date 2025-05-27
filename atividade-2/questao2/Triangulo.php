@@ -18,8 +18,7 @@
             $this->lado3 = $lado3;
             $this->base = $base;
             $this->altura = $altura;
-
-            //return $this->nome . " tem " . $this->idade . " anos.";
+           
 
             // return ($this->base * $this->altura) / 2;
 
