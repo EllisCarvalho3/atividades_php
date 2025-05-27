@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css?v=1">
-    <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
-    <title>Questão 2</title> 
+    <link rel="shortcut icon" href="../img/e.png" type="image/x-icon">
+    <title>Questão 3</title> 
 </head> 
 <header>
 <div class="logo-img"> 

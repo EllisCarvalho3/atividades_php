@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css?v=1">
-    <link rel="shortcut icon" href="../imagens/e_amarelo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/e.png" type="image/x-icon">
     <title>Questão 2</title> 
 </head> 
 <header>
@@ -27,32 +27,20 @@
 <br>
 <br><br><br><br>
   <main>
-      <div class="form-container">
+      <div class="box">
         <h1>Classe: Animal</h1>
-        <form action="" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder= "Digite o nome do animal..." required>
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade" placeholder= "Digite a idade do animal..." required>   
-
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
-    <div class="resultado">
-        <?php
-            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            <?php
                 require './Animal.php';
-                $nome = $_POST['nome'];
-                $idade = $_POST['idade'];
-                $animal = new Animal($nome, $idade);
-                $msg = $animal->apresentar();
-                echo $msg;
-                
-            }
-        ?>
-    </div>
+                    $cachorro = new Cachorro();
+                    $cachorro->nome = "Cristhall";
+                    $gato = new Gato();
+                    $gato->nome = "Garoa";
+                    echo $cachorro->nome . " faz: " . $cachorro->fazerSom() . "<br>";
+                    echo $gato->nome . " faz: " . $gato->fazerSom();
+
+                ?>
+
+      </div>
   </main>
     
 <br> <br> <br><br><br>

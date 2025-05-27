@@ -32,8 +32,7 @@ class Livro extends Produto {
         return parent::exibirProduto() . ", Autor: " . $this->autor;
     }
 }
-class DVD extends
-    Produto {
+class DVD extends Produto {
         public int $duracao; // duração em minutos
     
         public function __construct($nome, $preco, $duracao) {

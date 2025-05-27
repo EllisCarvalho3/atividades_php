@@ -25,14 +25,5 @@ class Gato extends Animal {
         return "Miau!";
     }
 }
-$cachorro = new Cachorro();
-$cachorro->nome = "Rex";
-$gato = new Gato();
-$gato->nome = "Mia";
-echo $cachorro->nome . " faz: " . $cachorro->fazerSom() . "<br>";
-echo $gato->nome . " faz: " . $gato->fazerSom();
-
-echo "<br>";
-
 
 ?>
