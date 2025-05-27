@@ -27,34 +27,17 @@
 <br>
 <br><br><br><br>
   <main>
-      <div class="form-container">
-        <h1>Classe: Funcionário</h1>
-        <form action="" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder= "Digite seu nome..." required>
-            
-            <label for="idade">Salário:</label>
-            <input type="number" id="idade" name="idade" placeholder= "Digite seu salário..." required>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
-    <div class="resultado">
         <?php
-            if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 require './Funcionario.php';
                 
                 $nome = $_POST['nome'];
                 $salario = $_POST['idade'];
 
-
                 $funcionario = new Funcionario($nome, $salario);
                 $msg = $funcionario->exibirDados();
-                
+
 
                 echo $msg;
-            }
         ?>
     </div>
   </main>
