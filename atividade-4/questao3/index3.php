@@ -29,16 +29,16 @@
   <main>
     <div class="box">
         <h1>Classe: Produto</h1>
-        <?php
+            <?php
                 require './Produto.php';
                 $livro = new Livro("Como eu era antes de você", 39.90, "Jojo Moyes");
                 $dvd = new DVD("Barbie", 29.90, 138);
+
                 echo $livro->exibirProduto() . "<br>";
                 echo $dvd->exibirProduto();
 
                 echo "<br>";
-        ?>
-
+            ?>
     </div>
   </main>
     

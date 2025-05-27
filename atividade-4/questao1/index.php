@@ -29,20 +29,18 @@
   <main>
     <div class="box">
         <h1>Classe: Funcionário</h1>
-                <?php
-                        require './Funcionario.php';
+          <?php
+            require './Funcionario.php';
+              $nome = new Funcionario ('Ellis Xavier', 20000.00);
+              $gerente = new Gerente("Ítalo", 6000.00, "Vendas");
+              $programador = new Programador("Webber", 9000.00, "PHP");
 
-                        $nome = new Funcionario ('Ellis Xavier', 20000.00);
-                        $gerente = new Gerente("Ítalo", 3000.00, "Vendas");
-                        $programador = new Programador("Webber", 9000.00, "PHP");
-                        echo $nome->exibirDados() . "<br>";
-                        echo $gerente->exibirDados() . "<br>";
-                        echo $programador->exibirDados() . "<br>";
+              echo $nome->exibirDados() . "<br>";
+              echo $gerente->exibirDados() . "<br>";
+              echo $programador->exibirDados() . "<br>";
 
-                ?>
-
+          ?>
     </div>
-    
   </main>
     
 <br> <br> <br><br><br>

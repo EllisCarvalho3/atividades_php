@@ -35,11 +35,11 @@
                     $cachorro->nome = "Cristhall";
                     $gato = new Gato();
                     $gato->nome = "Garoa";
+                    
                     echo $cachorro->nome . " faz: " . $cachorro->fazerSom() . "<br>";
                     echo $gato->nome . " faz: " . $gato->fazerSom();
 
-                ?>
-
+            ?>
       </div>
   </main>
     
