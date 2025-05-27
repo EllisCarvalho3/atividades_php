@@ -34,7 +34,7 @@
 
                         $nome = new Funcionario ('Ellis Xavier', 20000.00);
                         $gerente = new Gerente("Ítalo", 3000.00, "Vendas");
-                        $programador = new Programador("Webber", 2500.00, "PHP");
+                        $programador = new Programador("Webber", 9000.00, "PHP");
                         echo $nome->exibirDados() . "<br>";
                         echo $gerente->exibirDados() . "<br>";
                         echo $programador->exibirDados() . "<br>";

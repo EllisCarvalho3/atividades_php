@@ -6,6 +6,7 @@ Depois, crie duas classes que herdam de Funcionario:
 Gerente (adiciona a propriedade departamento)
 Programador (adiciona a propriedade linguagem)
 Cada subclasse deve para incluir suas novas propriedades.-->
+
 <?php
 
 {
