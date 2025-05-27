@@ -32,7 +32,7 @@
         <?php
                 require './Produto.php';
                 $livro = new Livro("Como eu era antes de você", 39.90, "Jojo Moyes");
-                $dvd = new DVD("Matrix", 29.90, 136);
+                $dvd = new DVD("Barbie", 29.90, 138);
                 echo $livro->exibirProduto() . "<br>";
                 echo $dvd->exibirProduto();
 
