@@ -24,7 +24,7 @@ class ClienteFisico extends Cliente
 
     public function __construct($cpf, $nome, $endereco, $bairro)
     {
-        parent::__construct($endereco, $bairro);
+        parent::__construct($endereco, $bairro); //para chamar um método estático de uma classe filha, usei parent dentro da classe filha.
         $this->cpf = $cpf;
         $this->nome = $nome;
     }
