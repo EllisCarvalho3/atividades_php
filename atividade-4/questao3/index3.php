@@ -42,7 +42,7 @@
     </div>
   </main>
     
-<br> <br> <br><br><br><br><br><br>
+<br> <br> <br><br><br><br>
 <footer>
         <span class="footer-title">Ellis Carvalho Xavier</span>
         <ul class="socials">
